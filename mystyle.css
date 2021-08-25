@@ -67,12 +67,12 @@ body {
 
 .container1pos {
   position: fixed;
-  bottom: 70%;
+  bottom: 73%;
   width: 100%;
 }
 
 .flex-container2 {
-  gap: 2em;
+  gap: 1em;
   display: flex;
   justify-content: center;
   margin-top: 4%;
@@ -80,7 +80,7 @@ body {
 
 .container2pos {
   position: fixed;
-  bottom: 48%;
+  bottom: 49%;
   width: 100%;
 }
 
