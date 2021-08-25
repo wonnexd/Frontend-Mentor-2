@@ -1,0 +1,97 @@
+body {
+  background-image: url("images/pattern-hills.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: 100% 25%; 
+  background-color:rgb(27, 0, 53)
+}
+
+.uberschrift {
+  color: rgb(255, 255, 255);
+  font-weight:bold;
+  font-family:cursive;
+  text-align: center;
+  width: 100%;
+}
+
+.zahlen {
+  box-shadow: 0px 5px 50px -20px #000000;
+  font-weight: bolder;
+  background-color:dimgrey;
+  color:hsl(345, 98%, 65%);
+  width: 3em;
+  padding: 0.7em 0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.einheit {
+  text-align: center;
+  color: hsl(237, 18%, 59%);
+  font-weight: bolder;
+}
+
+@media only screen and (min-width: 1px) {
+  div.smallfont {
+    font-size:x-large;
+  }
+  div.smallfont2 {
+    font-size:small;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  div.smallfont {
+    font-size:x-large;
+  }
+  div.smallfont2 {
+    font-size:small;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  div.smallfont {
+    font-size:xx-large;
+  }
+  div.smallfont2 {
+    font-size:large;
+  }
+}
+
+.flex-container1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+.container1pos {
+  position: fixed;
+  bottom: 70%;
+  width: 100%;
+}
+
+.flex-container2 {
+  gap: 2em;
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.container2pos {
+  position: fixed;
+  bottom: 48%;
+  width: 100%;
+}
+
+.flex-container3 {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.container3pos {
+  position: fixed;
+  bottom: 5%;
+  width: 100%;
+}

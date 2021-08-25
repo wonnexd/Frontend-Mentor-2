@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="mystyle.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>TEST</title>
+
+</head>
+<body>
+  <div class="container1pos">
+  <div class="flex-container1">
+  <div class="uberschrift smallfont">WE´RE LAUNCHING SOON</div>
+  </div>
+</div>
+
+  <div class="container2pos">
+  <div class="flex-container2">
+  <div>
+  <div class="zahlen smallfont" id="1"></div> </br> <div class="einheit smallfont2">Tage</div>
+</div>
+<div>
+  <div class="zahlen smallfont" id="2"></div> </br> <div class="einheit smallfont2" id="1">Stunden</div>
+</div>
+<div>
+  <div class="zahlen smallfont" id="3"></div> </br> <div class="einheit smallfont2" id="1">Minuten</div>
+</div>
+<div>
+  <div class="zahlen smallfont" id="4"></div> </br> <div class="einheit smallfont2" id="1">Sekunden</div>
+</div>
+  </div>
+</div>
+
+  <div class="container3pos">
+  <div class="flex-container3">
+  <a  href="https://www.facebook.com" > <img  src="images/icon-facebook.svg"> </a>
+  <a  href="https://www.Pinterest.com" > <img  src="images/icon-pinterest.svg"> </a>
+  <a  href="https://www.Instagram.com" > <img src="images/icon-instagram.svg"> </a>
+  </div>
+  </div>
+
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Oct 5, 2021 15:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      if (seconds < 10) {
+        seconds = "0" + seconds;
+      }
+      if (hours < 10) {
+        hours = "0" + hours;
+      }
+      if (minutes < 10) {
+        minutes = "0" + minutes;
+      }
+      if (days < 10) {
+        days = "0" + days;
+      }
+      // Display the result in the element with id="demo"
+      document.getElementById("1").innerHTML = days;
+      document.getElementById("2").innerHTML = hours;
+      document.getElementById("3").innerHTML = minutes;
+      document.getElementById("4").innerHTML = seconds;
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+
+    </script>
+
+</body>
+</html>
